@@ -1,0 +1,162 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background-color: lightblue;
+    height: 500px;
+    background-image: url("images/saturn-54999_640.jpg");
+    background-repeat: no-repeat;
+    background-position:  center;
+    position: relative;
+}
+
+h1{
+    color: white; 
+      padding-top: 200px;
+      text-align: center;
+ }
+
+.top_nav{
+	color: rgb(0, 0, 0);
+	margin-bottom: 200px;
+}
+
+.top_nav ul{
+    margin: 0px auto;
+    list-style: none;
+    padding-left: 0;
+}
+
+.top_nav ul a{
+    display: block;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 5px 10px;
+}
+
+main{
+    width: 95%;
+margin: 50px auto;
+}
+
+.astoro_img {
+    display: none;
+    margin: 0 auto;
+}
+
+.flex {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.flex img {
+    width: 300px;
+    margin: 0 auto;
+}
+
+.flex-reverse-mb{
+    flex-direction: column-reverse;
+}
+
+.flex div {
+    width: 250;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 900px) {
+main{
+    width: 960px;
+    margin: 50px auto;
+ }
+
+ h1{
+      padding-top: 200px;
+      text-align: center;
+ }
+ .astoro_img {
+    display: block;
+    width: 100px;
+    position: absolute;
+    top: 200px;
+    left: 50%;
+    transform: translateY(100px);
+    animation: up_down 2s ease-in-out forwards infinite alternate;
+}
+.top_nav ul{
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 0px auto;
+    list-style: none;
+}
+
+.top_nav ul a{
+    display: inline;
+    width: auto;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    padding: 10px 15px;
+    transition: all 0.6s ease-in-out;
+    border: 1px solid #ffffff;
+    border-radius: 12px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.top_nav ul a:hover {
+    color: #000;
+    background-color: #fff;
+    box-shadow: none;
+}
+
+.flex {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex img {
+    width: 300px;
+}
+
+.flex div {
+    margin: 0;
+}
+
+}
+
+section h3{
+    text-align: center;
+    margin:-top 32px;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.black_hall{
+    height: 600px;
+}
+
+footer{
+    background-color: skyblue;
+    padding: 30px;
+    text-align: center;
+}
+
+@keyframes up_down {
+    0% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(70px);
+    }
+}
